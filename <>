@@ -1,0 +1,11 @@
+blueprint-gatechecker/
+├── models.py          # Canonical SchoolModel (Teachers, Demand, etc.)
+├── normalizer.py      # CSV/JSON → SchoolModel converter
+├── engine.py          # Runs rule packs in order
+├── result_builder.py  # Aggregates findings → final report
+└── rules/
+    ├── schema.py      # Required fields, type checks
+    ├── integrity.py   # Duplicate/orphan checks
+    ├── feasibility.py # Capacity, qualification checks
+    ├── plausibility.py # Timing/policy checks
+    └── warnings.py    # Soft risks
