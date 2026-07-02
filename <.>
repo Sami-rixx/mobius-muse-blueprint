@@ -1,0 +1,11 @@
+---
+
+---
+
+## **📁 Rules Package**
+
+### **7. `gatechecker/rules/__init__.py`**
+```python
+from .schema import SchemaRule
+from .integrity import IntegrityRule
+from .feasibility import FeasibilityRule
